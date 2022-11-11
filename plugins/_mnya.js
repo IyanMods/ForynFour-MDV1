@@ -66,23 +66,6 @@ let type = (args[0] || '').toLowerCase()
 let _type = (args[0] || '').toLowerCase()
 try {
 
-// DEFAULT MENU
-      let dbki = `${global.dbki}`
-      let dbka = `${global.dbka}`
-      let kime = `${global.kime}`
-      let ki = `${global.ki}`
-      let dbki2 = `${global.dbki2}`
-      let dbka2 = `${global.dbka2}`
-      let dba = `${global.dba}`
-      
-// COMMAND MENU
-      let bhki = `${global.bhki}`
-      let bhka = `${global.bhka}`
-      let bdy = `${global.bdy}`
-      let ftb = `${global.ftb}`
-      let admen = `${global.admen}`
-      
-      
 //━━━━━━━━[ DATABASE USER ]━━━━━━━━//
   
     let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
@@ -150,6 +133,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
 //━━━━━━━━[ FAKE REPLY ]━━━━━━━━//
 
 let media = global.media
+let iyanmods = global.media
 const fkontak = {
 	"key": {
     "participants":"0@s.whatsapp.net",
@@ -193,7 +177,7 @@ const fdoc = {
    }
    }
 
-let mnya = `
+let tod = `
     *Keno AI 5.8.0*
   ▸ Name : ${name}
   ▸ Status : ${global.prem ? 'Premium' : 'Free'}
@@ -278,7 +262,7 @@ let mnya = `
 //const _0x5313da=_0x5833;(function(_0x260e43,_0x257ab4){const _0x503b1e=_0x5833,_0xd87a13=_0x260e43();while(!![]){try{const _0x3c8b40=parseInt(_0x503b1e(0x1da))/0x1*(parseInt(_0x503b1e(0x1c9))/0x2)+-parseInt(_0x503b1e(0x1ca))/0x3*(-parseInt(_0x503b1e(0x1cb))/0x4)+parseInt(_0x503b1e(0x1d1))/0x5+-parseInt(_0x503b1e(0x1ce))/0x6*(parseInt(_0x503b1e(0x1d3))/0x7)+-parseInt(_0x503b1e(0x1d9))/0x8*(-parseInt(_0x503b1e(0x1d4))/0x9)+parseInt(_0x503b1e(0x1d7))/0xa+-parseInt(_0x503b1e(0x1d2))/0xb;if(_0x3c8b40===_0x257ab4)break;else _0xd87a13['push'](_0xd87a13['shift']());}catch(_0x2e86ae){_0xd87a13['push'](_0xd87a13['shift']());}}}(_0xac0b,0x9a270));const buttonMessage={'document':{'url':gc},'mimetype':global[_0x5313da(0x1cc)],'fileName':''+ucapan(),'fileLength':fsizedoc,'pageCount':fpagedoc,'contextInfo':{'forwardingScore':0x22b,'isForwarded':![],'externalAdReply':{'showAdAttribution':!![],'mediaUrl':global['instagram'],'mediaType':0x2,'previewType':_0x5313da(0x1d6),'title':tb,'body':wm2,'thumbnail':await(await fetch(media))[_0x5313da(0x1c8)](),'sourceUrl':gc}},'caption':text,'footer':wm,'buttons':[{'buttonId':'.donasi','buttonText':{'displayText':_0x5313da(0x1cd)},'type':0x1},{'buttonId':_0x5313da(0x1cf),'buttonText':{'displayText':_0x5313da(0x1d5)},'type':0x1}],'headerType':0x6};function _0x5833(_0x2462fe,_0x5b86f1){const _0xac0b7e=_0xac0b();return _0x5833=function(_0x58334e,_0xde8e5d){_0x58334e=_0x58334e-0x1c8;let _0x19f059=_0xac0b7e[_0x58334e];return _0x19f059;},_0x5833(_0x2462fe,_0x5b86f1);}await conn[_0x5313da(0x1d0)](m[_0x5313da(0x1d8)],buttonMessage,{'quoted':m});function _0xac0b(){const _0x146b4b=['42FVQhCm','3YOVjEg','4001436ZAnWDJ','ddocx','Donasi','150gycguR','.owner','sendMessage','3334420XygTyH','32703748UQMNeS','6713HuAlrz','13410KnLwWm','Owner','pdf','10421530PjPRjj','chat','80dZDWSf','43055rzNNec','buffer'];_0xac0b=function(){return _0x146b4b;};return _0xac0b();}
 	
 
-// Tolonf
+await conn.send3ButtonImg(m.chat, media, mnya, text.trim(), `Sewa`, `${_p}sewa`, `Owner`, `${_p}owner`, `Speed`, `${_p}speed`, m, ftroli)
 
 } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)

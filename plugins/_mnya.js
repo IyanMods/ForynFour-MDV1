@@ -1,9 +1,9 @@
-// DEFAULT BASE By Nurutomo
-// POWERED By KrizynOfc
-// MAU BIKIN MENU LIST DIPLUGINS LAIN JUGA BISA
-// CONTOH NYA ADA DIMENU LAIN
+// Sc Dari Nurutomo
+// Direcode Oleh KrizynOfc
+// Direcode Lagi Oleh IyanMods
+// Jangan Lupa Star
 
-//━━━━━━━━[ DEFAULT SETTINGS ]━━━━━━━━//
+/━━━━━━━━[ DEFAULT SETTINGS ]━━━━━━━━//
 let levelling = require('../lib/levelling')
 let fs = require('fs')
 const util = require('util')
@@ -51,9 +51,9 @@ let tags = {
 //━━━━━━━━[ DEFAULT MENU ]━━━━━━━━//
 const defaultMenu = {
   before: `%readmore`.trimStart(), 
-  header: '%bhki *%category* %bhka',
-  body: '%bdy %cmd %islimit %isPremium',
-  footer: '%ftb', 
+  header: '    *%category*',
+  body: '  ✾ %cmd %islimit %isPremium',
+  footer: '\n', 
   after: `
 %admen
 `,
@@ -193,24 +193,32 @@ const fdoc = {
    }
    }
 
-let mnya = `ıll *INFO BOT* 
-🏷 ▸ Version : 4.4.1
-🗃️ ▸ Lib : Baileys-MD
-🧪 ▸ Mode : ${global.opts['self'] ? 'Self' : 'public'}
-⏰ ▸ Uptime : ${uptime}
-💬 ▸ User : *${Object.keys(global.db.data.users).length}* Pengguna
-🗯 ▸ Chat Ban : *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-🔖 ▸ User Ban : *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+let mnya = `
+    *Keno AI 5.8.0*
+  ▸ Name : ${name}
+  ▸ Status : ${global.prem ? 'Premium' : 'Free'}
+  ▸ Limit : ${limit}
+  ▸ Money : ${money}
+  ▸ Exp : ${exp}
+  ▸ Level : ${level}
+  ▸ Role : ${role}
 
-ıll *INFO USER*
-📇 ▸ Name : ${name}
-🆔 ▸ Status : ${global.prem ? 'Premium' : 'Free'}
-🎫 ▸ Limit : ${limit}
-💹 ▸ Money : ${money}
-✨ ▸ Exp : ${exp}
-📊 ▸ Level : ${level}
-📍 ▸ Role : ${role}
-${readMore}`
+    *Server Info*
+  ▸ Run:  Heroku 
+  ▸ Database: MongoDB
+  ▸ Lib: Baileys MD
+  ▸ Runtime: ${uptime}
+  ▸ Mode: ${global.opts['self'] ? 'Self' : 'public'}
+  ▸ User: *${Object.keys(global.db.data.users).length}* Pengguna
+  ▸ Chat Ban: *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
+  ▸ User Ban: *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+
+    *Rules*
+  ▸ Don't Spam
+  ▸ Don't Call
+  ▸ Don't Send 18+
+  ▸ Don't Send Virtext
+`
 
 	
     let groups = {}
@@ -269,21 +277,9 @@ ${readMore}`
 // Krizyn Baik budi ini button Doc ADS
 //const _0x5313da=_0x5833;(function(_0x260e43,_0x257ab4){const _0x503b1e=_0x5833,_0xd87a13=_0x260e43();while(!![]){try{const _0x3c8b40=parseInt(_0x503b1e(0x1da))/0x1*(parseInt(_0x503b1e(0x1c9))/0x2)+-parseInt(_0x503b1e(0x1ca))/0x3*(-parseInt(_0x503b1e(0x1cb))/0x4)+parseInt(_0x503b1e(0x1d1))/0x5+-parseInt(_0x503b1e(0x1ce))/0x6*(parseInt(_0x503b1e(0x1d3))/0x7)+-parseInt(_0x503b1e(0x1d9))/0x8*(-parseInt(_0x503b1e(0x1d4))/0x9)+parseInt(_0x503b1e(0x1d7))/0xa+-parseInt(_0x503b1e(0x1d2))/0xb;if(_0x3c8b40===_0x257ab4)break;else _0xd87a13['push'](_0xd87a13['shift']());}catch(_0x2e86ae){_0xd87a13['push'](_0xd87a13['shift']());}}}(_0xac0b,0x9a270));const buttonMessage={'document':{'url':gc},'mimetype':global[_0x5313da(0x1cc)],'fileName':''+ucapan(),'fileLength':fsizedoc,'pageCount':fpagedoc,'contextInfo':{'forwardingScore':0x22b,'isForwarded':![],'externalAdReply':{'showAdAttribution':!![],'mediaUrl':global['instagram'],'mediaType':0x2,'previewType':_0x5313da(0x1d6),'title':tb,'body':wm2,'thumbnail':await(await fetch(media))[_0x5313da(0x1c8)](),'sourceUrl':gc}},'caption':text,'footer':wm,'buttons':[{'buttonId':'.donasi','buttonText':{'displayText':_0x5313da(0x1cd)},'type':0x1},{'buttonId':_0x5313da(0x1cf),'buttonText':{'displayText':_0x5313da(0x1d5)},'type':0x1}],'headerType':0x6};function _0x5833(_0x2462fe,_0x5b86f1){const _0xac0b7e=_0xac0b();return _0x5833=function(_0x58334e,_0xde8e5d){_0x58334e=_0x58334e-0x1c8;let _0x19f059=_0xac0b7e[_0x58334e];return _0x19f059;},_0x5833(_0x2462fe,_0x5b86f1);}await conn[_0x5313da(0x1d0)](m[_0x5313da(0x1d8)],buttonMessage,{'quoted':m});function _0xac0b(){const _0x146b4b=['42FVQhCm','3YOVjEg','4001436ZAnWDJ','ddocx','Donasi','150gycguR','.owner','sendMessage','3334420XygTyH','32703748UQMNeS','6713HuAlrz','13410KnLwWm','Owner','pdf','10421530PjPRjj','chat','80dZDWSf','43055rzNNec','buffer'];_0xac0b=function(){return _0x146b4b;};return _0xac0b();}
 	
-conn.reply(m.chat, `*🇱🇷 Play bots wisely 🤗*\n*🇲🇨 Bermain bot dengan bijak* 🤗`, ftroli)
-await conn.send2ButtonLoc(m.chat, imgloc, mnya, text.trim(), `Donasi`, `${_p}donasi`, `Owner`, `${_p}owner`, m)
- await conn.sendFile(m.chat, hy, 'menu.mp3', null, fkontak, true, {
-type: 'audioMessage', // paksa tanpa convert di ffmpeg
-ptt: true,// true diatas ga work, sebab dipaksa tanpa convert ;v
-contextInfo: { 
-         externalAdReply: { 
-         showAdAttribution: true,
- 	     sourceUrl: `${pickRandom([`https://vt.tiktok.com/ZSRBqB9q1/`, `https://www.instagram.com/itskri99`, `https://youtube.com/hokenbeusz`])}`,
-           title: `${ucapan()}`,  
-            body: wm3, 
-           thumbnail: await (await fetch(`${pickRandom(['https://telegra.ph/file/8fcbf793da8b937a21237.jpg', 'https://telegra.ph/file/bc8746f21882e9585c79b.jpg', 'https://telegra.ph/file/cf8c6dae68158bc06731d.jpg', 'https://telegra.ph/file/29b9805b4704cda560c9b.jpg'])}`)).buffer()
-}
-     }
-})
+
+// Tolonf
+
 } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
@@ -291,13 +287,65 @@ contextInfo: {
 }
 handler.help = ['menu']
 handler.tags = ['main']
-handler.command = /^(m|menu|help|\?)$/i
+handler.command = /^(menu|help|\?)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
 handler.group = false
 handler.private = false
-handler.register = false
+handler.register = true
+handler.admin = false
+handler.botAdmin = false
+
+handler.fail = null
+handler.exp = 3
+module.exports = handler
+
+//━━━━━━━━[  JANGAN DI UBAH  ]━━━━━━━━//
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
+
+function pickRandom(list) {
+  return list[Math.floor(Math.random() * list.length)]
+}
+
+function clockString(ms) {
+  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
+  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+  let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+  return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
+}
+function ucapan() {
+  const time = moment.tz('Asia/Jakarta').format('HH')
+  res = "Selamat Dinihari 🌛"
+  if (time >= 4) {
+    res = "Selamat Pagi 🌤"
+  }
+  if (time > 10) {
+    res = "Selamat Siang 🌞"
+  }
+  if (time >= 15) {
+    res = "Selamat Sore ⛅"
+  }
+  if (time >= 18) {
+    res = "Selamat Malam 🌙"
+  }
+  return res
+}
+} catch (e) {
+    conn.reply(m.chat, 'Maaf, menu sedang error', m)
+    throw e
+  }
+}
+handler.help = ['menu']
+handler.tags = ['main']
+handler.command = /^(menu|help|\?)$/i
+handler.owner = false
+handler.mods = false
+handler.premium = false
+handler.group = false
+handler.private = false
+handler.register = true
 handler.admin = false
 handler.botAdmin = false
 
